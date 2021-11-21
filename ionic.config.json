@@ -1,0 +1,7 @@
+{
+  "name": "AppIniciodesesion_api",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
