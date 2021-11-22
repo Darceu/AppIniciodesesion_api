@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Listado Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list *ngFor="let usuario of usuarios">
+
+    <ion-avatar item-start>
+      <img [src]="usuario.picture.medium">
+    </ion-avatar>
+    <h1>{{ usuario.name.first }}</h1>
+    <P>{{ usuario.email }}</P>
+    </ion-list>
+  </ion-card>
+  <ion-button full (click) = "cargarUsuarios()" expand="block"> 
+    Listado de Usuarios
+  </ion-button>
+</ion-content>
